@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        body{
+           margin: 0px;
+           padding: 0px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+         background-color: hsl(148, 38%, 91%);
+         height: 100vh;
+        }
+        form{
+            background-color: hsl(0, 0%, 100%) ;
+            border-radius: 10px;
+            height: 500px;
+            padding: 24px;
+        }
+        button{
+           background-color:  hsl(169, 82%, 27%);
+           color: white;
+           width: 100%;
+           height:30px ;
+           border-radius: 5px;
+           border: none;
+
+        }
+        label{
+            font-size: 16px;
+        }
+        input{
+            height: 20px;
+            border: solid 1px  hsla(147, 39%, 91%, 0.856);  
+        }
+        
+       .b{
+        width: 100%;
+       }
+       textarea{
+        width: 100%;
+        height: 50px;
+        border: solid 1px  hsla(147, 39%, 91%, 0.856);
+       }
+       .input-container {
+            position: relative;
+            display: inline-block;
+           
+            
+        }
+        
+        .radio-button {
+            position: absolute;
+            margin-top: 0px;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+
+        }
+        .text-input {
+            padding-left: 30px; /* Space for the radio button */
+            height: 20px; /* Adjust height as needed */
+        width: 85%;
+        }
+     
+        .checkbox{
+            display: flex;
+            align-items: center; /* Vertically center the checkbox and text */
+            gap: 8px; /* Space between checkbox and text */
+        }
+        .checkbox-container input {
+            margin: 0; /* Remove default margin of checkbox */
+        }
+        .names{
+            margin-left: ;
+        }
+     
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Contact Us</h1>
+        <label>First Name*</label>
+        <input type="text" required><br><br>
+        <div class="names">
+        <label>Last Name*</label> 
+         <input type="text" required class="a" >
+       </div><br>
+        <label>Email Address*</label><br>
+        <input type="text" required  class="b"><br><br>
+        <label>Query type*</label><br><br>
+        <div class="input-container">
+            <input type="radio" id="radio1" class="radio-button">
+            <input type="text" class="text-input" placeholder="General Enquity">
+        </div>&nbsp;
+        <div class="input-container">
+            <input type="radio" id="radio1" class="radio-button">
+            <input type="text" class="text-input" placeholder="Support Request">
+        </div><br><br>
+        
+       
+        <label>Message*</label><br>
+        <textarea required ></textarea><br><br>
+        <div class="checkbox">
+            <input type="checkbox" >
+            <label for="consent">consent to being contacted by the team *</label> <br><br>
+        </div><br>
+        
+        <button>submit</button>
+        
+       
+    </form>
+</body>
+</html>
